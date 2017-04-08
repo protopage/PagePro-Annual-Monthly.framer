@@ -5,9 +5,9 @@ Framer.Extras.ShareInfo.disable()
 Framer.Extras.Preloader.enable()
 # Sketch
 sketch = Framer.Importer.load("imported/PagePro_NewPricing_Annual-Monthly@1x")
-{annualMonthlyToggle, annual, monthly, Annual} = sketch
+{annualMonthlyToggle, annual, monthly, meowmix} = sketch
 #Scroll
-scroll = ScrollComponent.wrap(Annual)
+scroll = ScrollComponent.wrap(meowmix)
 scroll.scrollVertical = true
 scroll.scrollHorizontal = false
 scroll.mouseWheelEnabled = true
@@ -58,6 +58,9 @@ scrollBar.onDrag ->
 Canvas.onResize ->
 	scroll.size = Canvas.size
 	scrollBar.x = Align.right
+
+
+meowmix.x = Align.center
 
 annualMonthlyToggle.onClick ->
 	if annual.visible is true
