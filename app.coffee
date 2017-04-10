@@ -62,6 +62,9 @@ Canvas.onResize ->
 
 meowmix.x = Align.center
 
+monthly.visible = false
+annual.visible = true
+
 annualMonthlyToggle.onClick ->
 	if annual.visible is true
 		monthly.visible = true
